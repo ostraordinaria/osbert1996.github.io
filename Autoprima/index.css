@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    width: 80%;
+    margin: auto;
+} */
+
+@font-face {
+    font-family: GreycliffCF;
+    src: url("/fonts/Greycliff CF/GreycliffCF-Regular.otf");
+}
+
+* {
+    font-family: GreycliffCF;
+}

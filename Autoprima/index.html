@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Auto Prima</title>
+    <script src="https://kit.fontawesome.com/3fe85a5e4a.js"></script>
+    <style>
+        .container {
+            max-width: 960px;
+        }
+
+        /*
+ * Custom translucent site header
+ */
+
+        .site-header {
+            background-color: rgba(0, 0, 0, .90);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+        }
+
+        .site-header a {
+            color: #fff;
+            /* transition: ease-in-out color .15s; */
+        }
+
+        .site-header a:hover {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .fill {
+            /* min-height: 100%; */
+            /* height: calc(100%); */
+            /* min-height: calc(100%); */
+            height: 110%;
+            min-height: 110%;
+            background-image: url("images/car.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        /*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+        /* .product-device {
+            position: absolute;
+            right: 10%;
+            bottom: -30%;
+            width: 300px;
+            height: 540px;
+            background-color: #333;
+            border-radius: 21px;
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+        }
+
+        .product-device::before {
+            position: absolute;
+            top: 10%;
+            right: 10px;
+            bottom: 10%;
+            left: 10px;
+            content: "";
+            background-color: rgba(255, 255, 255, .1);
+            border-radius: 5px;
+        }
+
+        .product-device-2 {
+            top: -25%;
+            right: auto;
+            bottom: 0;
+            left: 5%;
+            background-color: #e5e5e5;
+        } */
+
+
+        /*
+ * Extra utilities
+ */
+
+        /* .flex-equal>* {
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal>* {
+                -ms-flex: 1;
+                flex: 1;
+            }
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="site-header py-1 bg-black" style="border-bottom: 2px solid black;">
+        <div class="d-flex flex-column flex-lg-row justify-content-between container" >
+            <a class="py-3" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                    viewBox="0 0 24 24" focusable="false">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+                    </path>
+                </svg>
+            </a>
+            <div class="justify-content-between d-flex">
+                <a class="py-3 px-3 text-white d-none d-lg-inline-block" href="#">Home</a>
+                <a class="py-3 px-3 text-white d-none d-lg-inline-block" href="#">About Us</a>
+                <a class="py-3 px-3 text-white d-none d-lg-inline-block" href="#">Services</a>
+                <a class="py-3 px-3 text-white d-none d-lg-inline-block" href="#">Projects</a>
+                <a class="py-3 px-3 text-white d-none d-lg-inline-block" href="#">Partners</a>
+                <a class="py-3 px-3 text-white d-none d-lg-inline-block" href="#">Contacts</a>
+                <!-- <span class="py-3 px-3 text-white d-none d-md-inline-block"> -->
+                    <a href="#" class="py-3 px-3 text-white d-none d-lg-inline-block align-middle"><i class="py-1 fab fa-facebook-square"></i></a>
+                    <a href="#" class="py-3 px-3 text-white d-none d-lg-inline-block align-middle"><i class="py-1 fab fa-google-plus-g"></i></a>
+                    <a href="#" class="py-3 px-3 text-white d-none d-lg-inline-block align-middle"><i class="py-1 fab fa-instagram"></i></a>
+                <!-- </span> -->
+                <div class="py-3 px-3 text-white d-none d-lg-inline-block">
+                    <a href="#" class="p-1"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- body -->
+    <div class="container-full fill d-flex justify-content-center">
+        <!-- <div class="bg"> -->
+        <span style="position: absolute; top:60%; transform: translateY(-50%);">
+            <h2>It's All About the Detail</h2>
+        </span>
+        <!-- <p class=""></p> -->
+        <!-- </div> -->
+        <!-- <div class="section bg-grey center">
+            <div class="section-title">
+                section #1
+            </div>
+        </div>
+        <div class="section center">
+            <div class="section-title">
+                section #2
+            </div>
+            <div class="container-full flex-container">
+                <div class="section-circle">
+                    <label>Phase #</label>
+                </div>
+                <div class="section-circle">
+                    <label>Phase #</label>
+                </div>
+                <div class="section-circle">
+                    <label>Phase #</label>
+                </div>
+                <div class="section-circle">
+                    <label>Phase #</label>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- end body -->
+    <!-- footer -->
+    <footer class="footer">
+        footer
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
