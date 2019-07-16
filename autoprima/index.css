@@ -1,18 +1,50 @@
+@font-face {
+    font-family: GreycliffCF;
+    src: url("fonts/GreycliffCF/GreycliffCF-Bold.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-BoldOblique.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-DemiBold.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-DemiBoldOblique.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-ExtraBold.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-ExtraBoldOblique.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-Heavy.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-HeavyOblique.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-Light.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-LightOblique.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-Medium.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-MediumOblique.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-Regular.otf"),
+        url("fonts/GreycliffCF/GreycliffCF-RegularOblique.otf");
+}
+
+* {
+    font-family: GreycliffCF;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
-/* .container {
-    width: 80%;
-    margin: auto;
-} */
-
-@font-face {
-    font-family: GreycliffCF;
-    src: url("/fonts/Greycliff CF/GreycliffCF-Regular.otf");
+.site-header {
+    background-color: rgb(43, 42, 42);
+    /* -webkit-backdrop-filter: saturate(180%) blur(20px); */
+    /* backdrop-filter: saturate(180%) blur(20px); */
 }
 
-* {
-    font-family: GreycliffCF;
+.site-header a {
+    color: #fff;
+}
+
+.site-header a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+.fill {
+    height: 110%;
+    min-height: 110%;
+    background-image: url("images/car.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
 }
