@@ -322,9 +322,9 @@ input:focus {
     height: 3px;
     border-radius: 50%;
     background-color: black;
-    -webkit-box-shadow: 0 0 0 1px black;
+    /* -webkit-box-shadow: 0 0 0 1px black;
        -moz-box-shadow: 0 0 0 1px black;
-            box-shadow: 0 0 0 1px black;
+            box-shadow: 0 0 0 1px black; */
 }
 
 /* // Small devices (landscape phones, 576px and up) */
