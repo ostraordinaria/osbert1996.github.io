@@ -87,7 +87,7 @@
 }
 
 * {
-    font-family: GreycliffCF;
+    font-family: GreycliffCF-Bold;
 }
 
 body {
@@ -95,11 +95,24 @@ body {
     padding: 0;
 }
 
+/* .navbar-brand {
+    font-family: GreycliffCF-Regular;
+} */
+
+.navbar {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.navbar-brand {
+    /* min-height: 69px; */
+}
+
 .site-header {
     background-color: rgb(43, 42, 42);
-    height: 69px;
-    /* -webkit-backdrop-filter: saturate(180%) blur(20px); */
-    /* backdrop-filter: saturate(180%) blur(20px); */
+    /* height: 69px; */
+    border-bottom: 3px solid black;
+    color: white;
 }
 
 .site-header a {
@@ -112,7 +125,8 @@ body {
 }
 
 .site-header-item {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-family: GreycliffCF-Bold;
 }
 
 .site-header-social {
@@ -138,9 +152,10 @@ body {
     font-family: GreycliffCF-Regular;
 }
 
-.fill {
+.carousel-container {
     /* top: 69px; */
-    height: 840px;
+    height: auto;
+    max-height: 231px;
     /* min-height: 120%; */
     /* background-image: url("images/car.png"); */
     /* background-repeat: no-repeat; */
@@ -153,11 +168,41 @@ a {
     text-decoration: none;
 }
 
-.about-us {
+/* .about-us {
     height: 385px;
+} */
+
+.section h4 {
+    font-size: 19.2px;
 }
 
-textarea:focus, input:focus {
+.section-subtitle {
+    font-size: 10px;
+    font-family: GreycliffCF-Regular;
+}
+
+.section-number {
+    font-family: GreycliffCF-ExtraBold;
+}
+
+.section-title {
+    font-family: GreycliffCF-Regular;
+    font-weight: 600;
+}
+
+.section-content {
+    font-family: GreycliffCF-Bold;
+    font-size: 30px;
+    line-height: 1.1
+}
+
+.watch {
+    font-size: 10px;
+    font-family: GreycliffCF-Light;
+}
+
+textarea:focus,
+input:focus {
     outline: none;
 }
 
@@ -165,24 +210,242 @@ textarea:focus, input:focus {
     background-color: #fec526;
 }
 
-.body-col {
-    width: 1120px;
-    /* width: 67%; */
-}
-
-.body-col-content {
-    width: 925px;
+.bg-grey {
+    background-color: #ebebeb;
 }
 
 #footer {
     height: 415px;
 }
 
-.footer-content{
+.footer-content {
     /* width: 528px; */
     height: 305px;
 }
 
-::placeholder { /* Most modern browsers support this now. */
-   color: black;
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: black;
+}
+
+.most-outer-circle {
+    background: transparent;
+    height: 54.4px;
+    width: 54.4px;
+    border-radius: 50%;
+    border: .1px solid black;
+    font-size: 8px;
+}
+
+.most-outer-circle:focus {
+    outline: none;
+}
+
+.outer-circle {
+    position: absolute;
+    height: 41.6px;
+    width: 41.6px;
+    border-radius: 50%;
+    border: .5px solid black;
+}
+
+.inner-circle {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: initial;
+    /* position: absolute; */
+    top: 50%;
+}
+
+.front-image-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.front-image {
+    position: relative;
+}
+
+.about-us__back-images {
+    height: auto;
+    width: auto;
+}
+
+.brand-title {
+    font-family: GreycliffCF-ExtraBold;
+}
+
+.brand-evolution__image {
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 130px;
+    max-width: 130px;
+}
+
+.all-project:after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    width: 12px;
+    transform: rotate(-67deg);
+    transform-origin: 150% -5px;
+}
+
+.bg-shit {
+    background: url("images/placeholder_reverse.png");
+    background-repeat: no-repeat;
+    background-position: top 50% left 50%;
+    background-size: 292px auto;
+}
+
+.partner-highlights div {
+    font-family: GreycliffCF-Light;
+    font-size: .6rem;
+}
+
+.partner-highlights a {
+    font-size: .6rem;
+    text-decoration: none;
+    -webkit-appearance: none;
+    color: black;
+}
+
+.carousel-indicators li {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+    -webkit-box-shadow: 0 0 0 1px black;
+       -moz-box-shadow: 0 0 0 1px black;
+            box-shadow: 0 0 0 1px black;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .carousel-container {
+        max-height: 324px;
+    }
+
+    .front-image-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .front-image {
+        width: auto;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .carousel-container {
+        height: auto;
+        max-height: 432px;
+    }
+
+    .front-image-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .front-image {
+        width: auto;
+    }
+
+    .brand-evolution__image {
+        min-width: 180px;
+        max-width: 180px;
+        min-height: 180px;
+        max-width: 180px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel-container {
+        height: auto;
+        max-height: 576px;
+    }
+
+    .front-image-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .front-image {
+        width: auto;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel-container {
+        height: auto;
+        /* height: 840px; */
+        max-height: 840px;
+    }
+
+    .body-col {
+        width: 1120px;
+        /* width: 67%; */
+    }
+
+    .body-col-content {
+        width: 950px;
+    }
+
+    .bg-logo-left {
+        background: url('images/logo.png'), #fec526;
+        background-repeat: no-repeat;
+        background-position: left -218px top 2rem;
+        background-size: 605px auto;
+        z-index: -999;
+    }
+
+    .about-us {
+        height: 385px;
+    }
+
+    .about-us-container {
+        max-width: 425px;
+    }
+
+    .about-us__back-images {
+        min-height: 337px;
+        max-height: 337px;
+        width: auto;
+    }
+
+    .front-image-container {
+        position: absolute;
+        top: -7.5%;
+        margin-left: 96px;
+        margin-top: 0;
+    }
+
+    .front-image {
+        max-height: 420px;
+        min-height: 420px;
+        width: auto;
+        max-width: 630px;
+    }
+
+    .images {
+        position: absolute;
+    }
+
+    #carousel-front .carousel-item {
+        z-index: 1;
+    }
 }
